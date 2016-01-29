@@ -12,11 +12,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+        initData();
+    }
+
+    private void initData() {
+        System.out.print("这是在测试中");
     }
 
     public void init() {
         initView();
-
+        TestClass ts = new TestClass();
+        ts.initNumber = 100;
     }
 
 
